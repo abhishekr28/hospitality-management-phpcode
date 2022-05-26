@@ -19,5 +19,5 @@ jobs:
              username: ${{ secrets.USERNAME }}
              key: ${{ secrets.KEY }}
              source: "https://github.com/abhishekr28/hospitality-management-phpcode.git"
-             target: "/var/www/html"
+             target: "/var/www/html/hospitality-management-phpcode"
           
