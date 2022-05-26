@@ -21,7 +21,3 @@ jobs:
              source: "https://github.com/abhishekr28/hospitality-management-phpcode.git"
              target: "/var/www/html"
           
-      - name: Run a multi-line script
-        run: 
-          echo Add other actions to build,
-          echo test, and deploy your project.
