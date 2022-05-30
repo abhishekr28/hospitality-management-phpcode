@@ -13,5 +13,5 @@ jobs:
       with:
         host: 13.126.123.26
         username: ubuntu
-        key: ${{ SSH_PRIVATE_KEY}}
+        key: ${{ secrets.SSH_PRIVATE_KEY}}
         script: whoami
