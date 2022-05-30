@@ -17,6 +17,11 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        source: "/abhishekr28/hospitality-management-phpcode"
-        target: "/var/www/html/hospitality-management-phpcode"
+        
+        
+    - name: SCP Files Action
+      uses: a-was/scp-files-action@v1
+      with:
+       source: "/abhishekr28/hospitality-management-phpcode"
+       target: "/var/www/html/hospitality-management-phpcode"
       
