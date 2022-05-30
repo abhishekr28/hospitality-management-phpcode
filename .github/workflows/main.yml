@@ -1,16 +1,18 @@
-name: copy files
-on: [push]
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
 jobs:
-
-  build:
-    name: Build
-    runs-on: self-hosted
-    steps:
-    - uses: actions/checkout@master
-    - name: copy file
-      uses: canastro/copy-file-action@master
-      with:
-        host: 13.126.123.26
-        user: ubuntu
-        key: ${{ secrets.KEY }}
-
+runs-on: self-hosted
+ name: executing remote ssh commands using ssh key
+ uses: appleboy/ssh-action@master
+ with:
+    host: 13.126.123.26
+    username: Ubuntu
+    key: ${{ secrets.KEY }}
+    script: whoami
