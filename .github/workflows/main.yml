@@ -19,6 +19,6 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        source: "https://github.com/abhishekr28/hospitality-management-phpcode.git"
+        source: "/abhishekr28/hospitality-management-phpcode"
         target: "/var/www/html/hospitality-management-phpcode"
       
