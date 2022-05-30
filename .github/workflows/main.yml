@@ -17,4 +17,6 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        script: whoami
+        source: "https://github.com/abhishekr28/hospitality-management-phpcode.git"
+        target: "sudo /var/www/html/hospitality-management-phpcode"
+      
