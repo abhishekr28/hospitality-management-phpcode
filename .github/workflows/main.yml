@@ -8,7 +8,9 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote ssh commands using password
+    - name: Repository checkout
+      uses: actions/checkout@v2
+    - name: executing remote ssh commands using key
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.SSH_HOST }}
