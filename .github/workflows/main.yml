@@ -20,5 +20,5 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
         source: "https://github.com/abhishekr28/hospitality-management-phpcode.git"
-        target: "sudo /var/www/html/hospitality-management-phpcode"
+        target: "/var/www/html/hospitality-management-phpcode"
       
