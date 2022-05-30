@@ -22,6 +22,6 @@ jobs:
     - name: SCP Files Action
       uses: a-was/scp-files-action@v1
       with:
-       source: "/abhishekr28/hospitality-management-phpcode"
+       source: "*"
        target: "/var/www/html/hospitality-management-phpcode"
       
