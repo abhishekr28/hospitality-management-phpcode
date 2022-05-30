@@ -13,5 +13,4 @@ jobs:
         host: 13.126.123.26
         user: ubuntu
         key: ${{ secrets.KEY }}
-        source: "https://github.com/abhishekr28/hospitality-management-phpcode.git"
-        target: "sudo cd /var/www/html/hospitality-management-phpcode"
+
