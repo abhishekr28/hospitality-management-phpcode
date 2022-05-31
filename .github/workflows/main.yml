@@ -15,5 +15,6 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        script: git clone https://github.com/abhishekr28/hospitality-management-phpcode.git
-                sudo cp Hospital-Management-System/ /var/www/html -r
+        script: |
+             git clone https://github.com/abhishekr28/hospitality-management-phpcode.git
+             sudo cp Hospital-Management-System/ /var/www/html -r
