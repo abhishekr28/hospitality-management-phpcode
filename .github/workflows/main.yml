@@ -16,5 +16,5 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-             git pull https://github.com/abhishekr28/hospitality-management-phpcode.git
+             git clone https://github.com/abhishekr28/hospitality-management-phpcode.git
              
