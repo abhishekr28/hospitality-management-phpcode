@@ -17,5 +17,5 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
              sudo git clone https://github.com/abhishekr28/hospitality-management-phpcode.git
-             sudo cp /hospitality-management-phpcode/* /var/www/html/
+             sudo cp hospitality-management-phpcode/* /var/www/html/
              
