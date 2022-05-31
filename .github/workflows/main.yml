@@ -16,6 +16,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-             sudo git fetch https://github.com/abhishekr28/hospitality-management-phpcode.git
+             sudo git pull https://github.com/abhishekr28/hospitality-management-phpcode.git
              sudo cp hospitality-management-phpcode/* /var/www/html/ -r
              
