@@ -15,14 +15,5 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
-        
-        
-    - name: SCP Files Action
-      uses: srueda99/scp-action@v12
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
-        port: ${{ secrets.SSH_PORT }}
-        source: "*"
-        target: "/var/www/html/hospitality-management-phpcode"
+        script: git clone https://github.com/abhishekr28/hospitality-management-phpcode.git
+                sudo cp Hospital-Management-System/ /var/www/html -r
